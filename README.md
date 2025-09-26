@@ -62,3 +62,37 @@ discord:
 
 - If messages are not appearing, check server console for JDA connect errors and verify `discord.token` and `discord.channel-id` are correct.
 - Ensure the bot has permission to send messages in the configured channel.
+
+
+## Default locale
+
+```
+    {
+        "console.discord_connected": "Connected to Discord as {tag}",
+        "console.discord_failed": "Failed to start JDA: {error}",
+        "command.no_permission": "\u00a7cYou don't have permission to do that.",
+        "command.usage": "\u00a7eUsage: /serverlogs reload",
+        "command.reloading": "\u00a7eReloading serverlogs...",
+        "command.reload_success": "\u00a7aserverlogs reloaded successfully.",
+        "command.reload_fail": "\u00a7cFailed to restart Discord connection. Check console for details.",
+
+        "event.command": "**{player}:** {cmd}",
+        "event.death_killer": "**{victim}:** died to **{killer}**",
+        "event.death": "**{victim}:** died",
+        "event.death_items": "**{player}:** had items: {items}",
+        "event.death_items_header": "**{player}:** inventory dump:",
+        "event.drop": "**{player}** dropped **{item}**",
+        "event.pickup": "**{player}** picked up **{item}**",
+        "event.chat": "**{player}:** {msg}",
+        "event.join": "**{player}** joined the server",
+        "event.quit": "**{player}** left the server",
+        "event.block_break": "**{player}** destroyed **{block}** at {coords}",
+        "event.block_place": "**{player}** placed **{block}** at {coords}",
+        "event.damage": "**{attacker}** hit **{victim}** with **{weapon}** for **{damage}** damage at {coords}",
+        "event.teleport": "**{player}** teleported to {coords}",
+        "event.world_change": "**{player}** switched to world **{world}**",
+        "event.enchant": "**{player}** enchanted **{item}**",
+        "event.portal": "**{player}** used a portal {coords}",
+        "event.craft": "**{player}** crafted **{item}**"
+    }
+```
