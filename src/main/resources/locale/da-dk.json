@@ -1,0 +1,28 @@
+{
+	"console.discord_connected": "Forbundet til Discord som {tag}",
+	"console.discord_failed": "Kunne ikke starte JDA: {error}",
+	"command.no_permission": "\u00a7cDu har ikke tilladelse til at gøre det.",
+	"command.usage": "\u00a7eBrug: /serverlogs reload",
+	"command.reloading": "\u00a7eGenindlæser serverlogs...",
+	"command.reload_success": "\u00a7aserverlogs genindlæst korrekt.",
+	"command.reload_fail": "\u00a7cKunne ikke genstarte Discord-forbindelsen. Tjek konsollen for detaljer.",
+
+	"event.command": "**{player}:** {cmd}",
+	"event.death_killer": "**{victim}:** døde til **{killer}**",
+	"event.death": "**{victim}:** døde",
+	"event.death_items": "**{player}:** havde items: {items}",
+	"event.death_items_header": "**{player}:** inventory dump:",
+	"event.drop": "**{player}** droppede **{item}**",
+	"event.pickup": "**{player}** samlede **{item}** op",
+	"event.chat": "**{player}:** {msg}",
+	"event.join": "**{player}** joined serveren",
+	"event.quit": "**{player}** forlod serveren",
+	"event.block_break": "**{player}** ødelagde **{block}** ved {coords}",
+	"event.block_place": "**{player}** placerede **{block}** ved {coords}",
+	"event.damage": "**{attacker}** slog **{victim}** med **{weapon}** for **{damage}** damage ved {coords}",
+	"event.teleport": "**{player}** teleporterede til {coords}",
+	"event.world_change": "**{player}** skiftede til verden **{world}**",
+	"event.enchant": "**{player}** enchantede **{item}**",
+	"event.portal": "**{player}** brugte en portal {coords}",
+	"event.craft": "**{player}** craftede **{item}**"
+}

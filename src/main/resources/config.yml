@@ -1,0 +1,5 @@
+locale: 'en'
+discord:
+  token: 'TOKEN'
+  channel-id: 0000000000000000000
+  activity: 'who are you?🐈'

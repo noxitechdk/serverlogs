@@ -1,0 +1,19 @@
+name: serverlogs
+version: '1.0-SNAPSHOT'
+main: dk.noxitech.serverlogs.Main
+authors:
+  - NoxiTech.dk
+  - NuXi
+api-version: '1.21'
+description: Sender server logs til en Discord kanal
+commands:
+  serverlogs:
+    description: serverlogs command
+    usage: /<command> reload
+    permission: serverlogs.reload
+    permission-message: You do not have permission to use this command.
+
+permissions:
+  serverlogs.reload:
+    description: Reload the ServerLogs plugin configuration and reconnect to Discord
+    default: op
