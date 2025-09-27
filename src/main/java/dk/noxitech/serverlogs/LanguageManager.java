@@ -3,14 +3,11 @@ package dk.noxitech.serverlogs;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.bukkit.plugin.java.JavaPlugin;
-
 import java.io.*;
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
-
-import java.util.stream.Collectors;
 
 public class LanguageManager {
 
@@ -97,10 +94,6 @@ public class LanguageManager {
             }
         }
         return val;
-    }
-
-    public String get(String locale, String key) {
-        return get(locale, key, null);
     }
 
     public String get(String key) {
