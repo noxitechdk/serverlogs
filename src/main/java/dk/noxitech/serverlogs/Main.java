@@ -75,10 +75,8 @@ public final class Main extends JavaPlugin {
         String token = getConfig().getString("discord.token", "");
         long id = getConfig().getLong("discord.channel-id", 0L);
         try {
-            jda = JDABuilder.createDefault(token,
-                            GatewayIntent.GUILD_MESSAGES,
-                            GatewayIntent.MESSAGE_CONTENT,
-                            GatewayIntent.GUILD_MESSAGE_REACTIONS)
+            jda = JDABuilder.createLight(token)
+                    .disableCache(CacheFlag.VOICE_STATE, CacheFlag.EMOJI, CacheFlag.STICKER, CacheFlag.SCHEDULED_EVENTS)
                     .setActivity(Activity.watching(Objects.requireNonNull(getConfig().getString("discord.activity"))))
                     .setStatus(OnlineStatus.IDLE)
                     .build()
