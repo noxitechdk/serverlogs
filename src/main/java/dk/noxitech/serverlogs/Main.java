@@ -101,8 +101,16 @@ public final class Main extends JavaPlugin {
                 } catch (Exception ignored) {}
                 listener = null;
             }
-            jda.shutdownNow();
-            jda = null;
+            try {
+                jda.shutdown();
+                if (!jda.awaitShutdown(java.time.Duration.ofSeconds(2))) {
+                    jda.shutdownNow();
+                }
+            } catch (Exception e) {
+                getLogger().warning("JDA shutdown error (this is normal during server shutdown): " + e.getMessage());
+            } finally {
+                jda = null;
+            }
         }
     }
 
@@ -119,6 +127,10 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        stopJda();
+        try {
+            stopJda();
+        } catch (Exception e) {
+            getLogger().info("Plugin disabled (shutdown errors are normal)");
+        }
     }
 }
